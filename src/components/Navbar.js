@@ -6,7 +6,7 @@ function Navbar() {
     <nav>
       <ul className="nav-links">
         <NavLink to="/">Начало</NavLink>
-        <NavLink to="/confirm">Потвърждаване</NavLink>
+        <NavLink to="/confirm">Потвърждение</NavLink>
         <NavLink to="/plan&locations">План & Локации</NavLink>
       </ul>
     </nav>
