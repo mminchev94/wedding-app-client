@@ -1,11 +1,14 @@
 nav {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-links {
-  margin: 45px 10px 20px 0px;
+  margin: 45px 10px 25px 0px;
   z-index: 200;
+  border-bottom: 1px solid lightgray;
 }
 
 nav > .nav-links > a {
@@ -14,4 +17,9 @@ nav > .nav-links > a {
   margin: 10px;
   color: rgb(140, 108, 108);
   padding: 2px;
+  display: inline-block;
+}
+
+nav > .nav-links > a:hover {
+  color: rgb(208, 158, 158);
 }

@@ -1,5 +1,4 @@
-import React from "react";
-import image from "../assets/image.jpg";
+import vladi_milen from "../assets/vladi_milen.jpg";
 
 function HomePage() {
   return (
@@ -8,7 +7,7 @@ function HomePage() {
       <h1 className="second-heading">Владимира и Милен</h1>
       <p className="location">гр. Добрич</p>
       <p className="date">2 Септември 2023</p>
-      <img class="our-image" src={image} alt="image" />
+      <img className="our-image" src={vladi_milen} alt="vladi_milen" />
     </div>
   );
 }

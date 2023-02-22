@@ -1,19 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import BgVideo from "./components/BgVideo";
-import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
+import LocationsPage from "./pages/LocationsPage";
 
 function App() {
   return (
-    <div>
-      <BgVideo />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/confirm" />
-        <Route path="/plan&locations" />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/invitation" />
+      <Route path="/plan&locations" element={<LocationsPage />} />
+    </Routes>
   );
 }
 
