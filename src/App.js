@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import LocationsPage from "./pages/LocationsPage";
+import PlanPage from "./pages/PlanPage";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/invitation" />
-      <Route path="/plan&locations" element={<LocationsPage />} />
+      <Route path="/plan&locations" element={<PlanPage />} />
     </Routes>
   );
 }
