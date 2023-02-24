@@ -14,7 +14,7 @@ function WeddingPlan() {
         <span>Граждански брак в Ритуална зала гр. Добрич</span>
       </div>
       <div className="photo-session">
-        <img className="icons" src={photo} alt="photo" />
+        <img className="icons" src={photo} alt="photosession" />
         <span>15:30</span>
         <span>Фотосесия с младоженците</span>
       </div>
