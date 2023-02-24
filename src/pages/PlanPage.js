@@ -4,10 +4,14 @@ import WeddingPlan from "../components/WeddingPlan";
 function PlanPage() {
   return (
     <div>
-      <span>Сватбен план</span>
-      <WeddingPlan />
-      <span>Локации</span>
-      <Locations />
+      <div className="plan-container">
+        <span className="plan-heading-1">Сватбен план</span>
+        <WeddingPlan />
+      </div>
+      <div className="locations-container">
+        <span className="plan-heading-2">Локации</span>
+        <Locations />
+      </div>
     </div>
   );
 }

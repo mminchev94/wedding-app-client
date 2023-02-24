@@ -7,25 +7,25 @@ import infinity from "../assets/infinity.png";
 
 function WeddingPlan() {
   return (
-    <div>
+    <div className="wedding-plan">
       <div className="ritual">
         <img className="icons" src={weddingring} alt="weddingring" />
-        <span>15:00</span>
+        <span className="time">15:00</span>
         <span>Граждански брак в Ритуална зала гр. Добрич</span>
       </div>
       <div className="photo-session">
         <img className="icons" src={photo} alt="photosession" />
-        <span>15:30</span>
+        <span className="time">15:30</span>
         <span>Фотосесия с младоженците</span>
       </div>
       <div className="church-ritual">
         <img className="icons" src={church} alt="church" />
-        <span>16:30</span>
+        <span className="time">16:30</span>
         <span>Църковен ритуал в храм "Св. Троица"</span>
       </div>
       <div className="restaurant">
         <img className="icons" src={restaurant} alt="restaurant" />
-        <span>18:30</span>
+        <span className="time">18:30</span>
         <span>
           Поздравления, подаръци и настаняване в ресторант "Green Palace"
         </span>
