@@ -2,6 +2,11 @@
   width: 50px;
 }
 
+.planpage-container {
+  height: calc(100% - 100px);
+  padding-top: 100px;
+}
+
 .plan-container {
   display: flex;
   flex-direction: column;
@@ -15,7 +20,7 @@
 
 .plan-container > span {
   font-size: 25px;
-  margin: 120px 0 10px 85%;
+  margin: 25px 0 10px 85%;
   text-decoration: underline;
 }
 
@@ -68,5 +73,5 @@
 }
 
 .party > img:first-child {
-  padding-right: 21px;
+  padding-right: 18px;
 }

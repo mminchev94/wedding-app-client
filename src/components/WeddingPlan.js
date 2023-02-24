@@ -1,40 +1,19 @@
-import weddingring from "../assets/weddingring.png";
-import church from "../assets/church.png";
-import champagne from "../assets/champagne.png";
-import photo from "../assets/photo.png";
-import restaurant from "../assets/restaurant.png";
-import infinity from "../assets/infinity.png";
-
-function WeddingPlan() {
+function WeddingPlan(props) {
   return (
     <div className="wedding-plan">
-      <div className="ritual">
-        <img className="icons" src={weddingring} alt="weddingring" />
-        <span className="time">15:00</span>
-        <span>Граждански брак в Ритуална зала гр. Добрич</span>
-      </div>
-      <div className="photo-session">
-        <img className="icons" src={photo} alt="photosession" />
-        <span className="time">15:30</span>
-        <span>Фотосесия с младоженците</span>
-      </div>
-      <div className="church-ritual">
-        <img className="icons" src={church} alt="church" />
-        <span className="time">16:30</span>
-        <span>Църковен ритуал в храм "Св. Троица"</span>
-      </div>
-      <div className="restaurant">
-        <img className="icons" src={restaurant} alt="restaurant" />
-        <span className="time">18:30</span>
-        <span>
-          Поздравления, подаръци и настаняване в ресторант "Green Palace"
-        </span>
-      </div>
-      <div className="party">
-        <img className="icons" src={champagne} alt="champagne" />
-        <img className="icons" src={infinity} alt="infinity" />
-        <span>Купон до зори</span>
-      </div>
+      {props.weddingPlanData.map((plan, index) => (
+        <div className={plan.class} key={index}>
+          {Array.isArray(plan.icon) ? (
+            plan.icon.map((icon, i) => (
+              <img className="icons" key={i} src={icon} alt={`icon-${i}`} />
+            ))
+          ) : (
+            <img className="icons" src={plan.icon} alt="icon" />
+          )}
+          <span className="time">{plan.time}</span>
+          <span>{plan.text}</span>
+        </div>
+      ))}
     </div>
   );
 }
