@@ -43,11 +43,11 @@ function PlanPage() {
   return (
     <div className="planpage-container">
       <div className="plan-container">
-        <span className="plan-heading-1">Сватбен план</span>
+        <span>Сватбен план</span>
         <WeddingPlan weddingPlanData={weddingPlanData} />
       </div>
       <div className="locations-container">
-        <span className="plan-heading-2">Локации</span>
+        <span>Локации</span>
         <Locations />
       </div>
     </div>

@@ -1,7 +1,7 @@
-function WeddingPlan(props) {
+function WeddingPlan({ weddingPlanData }) {
   return (
     <div className="wedding-plan">
-      {props.weddingPlanData.map((plan, index) => (
+      {weddingPlanData.map((plan, index) => (
         <div className={plan.class} key={index}>
           {Array.isArray(plan.icon) ? (
             plan.icon.map((icon, i) => (
