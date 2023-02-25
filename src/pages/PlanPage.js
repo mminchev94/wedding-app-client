@@ -47,7 +47,7 @@ function PlanPage() {
         <WeddingPlan weddingPlanData={weddingPlanData} />
       </div>
       <div className="locations-container">
-        <span>Локации</span>
+        <span>Локации (гр. Добрич)</span>
         <Locations />
       </div>
     </div>
