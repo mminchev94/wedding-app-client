@@ -42,7 +42,5 @@
   align-self: center;
   border-radius: 50%;
   box-shadow: 10px 10px 10px 0px rgb(93 91 76);
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
-  opacity: 0.5;
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(92, 92, 32));
 }
