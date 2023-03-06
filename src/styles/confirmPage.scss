@@ -1,0 +1,50 @@
+.invite-container {
+  height: calc(100% - 100px);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.invite-container > span {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.invite-container > form {
+  width: 100%;
+  z-index: 200;
+}
+
+form > input {
+  width: calc(100% - 135px);
+  margin-right: 20px;
+  border: none;
+  background-color: rgb(234, 223, 229);
+  border-radius: 15px;
+  height: 35px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form > button {
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(170, 161, 166);
+  cursor: pointer;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form > button:hover {
+  background-color: rgb(136, 126, 131);
+  color: rgb(202, 202, 202);
+}
