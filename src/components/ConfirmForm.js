@@ -19,8 +19,8 @@ function ConfirmForm() {
         const response = await axios.get(
           `http://localhost:3000/guests/${pass}`
         );
-        const guest = response.data.guest;
-        setFormResult(`${guest}`);
+        const { guest } = response.data;
+        setFormResult(`${guest.names}`);
         navigate(`/invitation/${pass}`, { state: { guest } });
       } catch (error) {
         setFormResult(`Невалидна парола`);
