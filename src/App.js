@@ -16,8 +16,8 @@ function App() {
       <Route path="/invitation" element={<ConfirmPage />} />
       <Route path="/invitation/:code" element={<InvitationPage />} />
       <Route path="/plan&locations" element={<PlanPage />} />
-      <Route path="*" element={<Navigate to="/404" replace />} />
       <Route path="/404" element={<NotFoundPage />} />
+      <Route path="*" element={<Navigate to="/404" replace />} />
     </Routes>
   );
 }
