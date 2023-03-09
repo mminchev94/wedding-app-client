@@ -1,8 +1,20 @@
 import { useLocation } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
 
 function InvitationPage() {
   const location = useLocation();
   const guest = location.state.guest;
+  const [attendanceConfirmed, setAttendanceConfirmed] = useState(
+    guest.attendance
+  );
+
+  const onClickAttendance = async () => {
+    await axios.put(`http://localhost:3000/guests/${guest.password}`, {
+      attendance: true,
+    });
+    setAttendanceConfirmed(true);
+  };
 
   return (
     <div className="invitation-container">
@@ -33,7 +45,13 @@ function InvitationPage() {
         <span className="inv-row">
           Моля потвърдете вашето присъствие до 31.07.2023г.
         </span>
-        <button className="button">Потвърждавам</button>
+        {attendanceConfirmed ? (
+          <span>Благодарим, че ще присъствате на нашия празник!</span>
+        ) : (
+          <button onClick={onClickAttendance} className="button">
+            Потвърждавам
+          </button>
+        )}
       </div>
     </div>
   );
