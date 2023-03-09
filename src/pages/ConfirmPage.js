@@ -1,13 +1,29 @@
-import ConfirmForm from "../components/ConfirmForm";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
+import PersonInvite from "../components/PersonInvite";
+
 function ConfirmPage() {
+  const location = useLocation();
+  const guest = location.state.guest;
+  const [attendanceConfirmed, setAttendanceConfirmed] = useState(
+    guest.attendance
+  );
+
+  const onClickAttendance = async () => {
+    await axios.put(`http://localhost:3000/guests/${guest.password}`, {
+      attendance: true,
+    });
+    setAttendanceConfirmed(true);
+  };
+
   return (
-    <div className="invite-container">
-      <span>
-        Скъпи гости,
-        <br /> попълнете в полето паролата, която ви е предоставена от
-        младоженците, за да получите вашата персонална покана!
-      </span>
-      <ConfirmForm />
+    <div className="invitation-container">
+      <PersonInvite
+        guest={guest}
+        attendanceConfirmed={attendanceConfirmed}
+        onClickAttendance={onClickAttendance}
+      />
     </div>
   );
 }

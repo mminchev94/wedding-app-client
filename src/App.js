@@ -13,8 +13,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/invitation" element={<ConfirmPage />} />
-      <Route path="/invitation/:code" element={<InvitationPage />} />
+      <Route path="/invitation" element={<InvitationPage />} />
+      <Route path="/invitation/:code" element={<ConfirmPage />} />
       <Route path="/plan&locations" element={<PlanPage />} />
       <Route path="/404" element={<NotFoundPage />} />
       <Route path="*" element={<Navigate to="/404" replace />} />
