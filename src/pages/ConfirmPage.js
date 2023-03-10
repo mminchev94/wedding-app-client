@@ -11,9 +11,12 @@ function ConfirmPage() {
   );
 
   const onClickAttendance = async () => {
-    await axios.put(`http://localhost:3000/guests/${guest.password}`, {
-      attendance: true,
-    });
+    await axios.put(
+      `https://wedding-api-alke.onrender.com/guests/${guest.password}`,
+      {
+        attendance: true,
+      }
+    );
     setAttendanceConfirmed(true);
   };
 

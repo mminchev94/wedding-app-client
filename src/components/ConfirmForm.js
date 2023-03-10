@@ -17,7 +17,7 @@ function ConfirmForm() {
     if (pass) {
       try {
         const response = await axios.get(
-          `http://localhost:3000/guests/${pass}`
+          `https://wedding-api-alke.onrender.com/guests/${pass}`
         );
         const { guest } = response.data;
         setFormResult(`${guest.names}`);
