@@ -12,7 +12,7 @@ function ConfirmPage() {
 
   const onClickAttendance = async () => {
     await axios.put(
-      `https://wedding-api-alke.onrender.com/guests/${guest.password}`,
+      `https://nice-ruby-wildebeest-cape.cyclic.app/guests/${guest.password}`,
       {
         attendance: true,
       }

@@ -17,7 +17,7 @@ function ConfirmForm() {
     if (pass) {
       try {
         const response = await axios.get(
-          `https://wedding-api-alke.onrender.com/guests/${pass}`
+          `https://nice-ruby-wildebeest-cape.cyclic.app/guests/${pass}`
         );
         const { guest } = response.data;
         setFormResult(`${guest.names}`);
