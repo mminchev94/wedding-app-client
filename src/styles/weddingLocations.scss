@@ -2,10 +2,28 @@
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 .locations-container {
-  margin-left: 2.5%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-left: 5%;
+
+  background: rgba(255, 255, 255, 0.65);
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  @media (min-width: 961px) {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
 }
 
 .locations-container > span {
@@ -16,18 +34,24 @@
 }
 
 .location-1 {
-  margin: 20px 0 0 4%;
-  z-index: 500;
+  margin: 20px 0 0;
+  @media (min-width: 961px) {
+    margin: 20px 0 0 4%;
+  }
 }
 
 .location-2 {
-  margin: 10px 0 0 5%;
-  z-index: 500;
+  margin: 10px 0 0;
+  @media (min-width: 961px) {
+    margin: 10px 0 0 5%;
+  }
 }
 
 .location-3 {
-  margin: 10px 0 0 6%;
-  z-index: 500;
+  margin: 10px 0 0;
+  @media (min-width: 961px) {
+    margin: 10px 0 0 6%;
+  }
 }
 
 .wedding-locations a {
