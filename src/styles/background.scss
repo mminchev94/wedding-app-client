@@ -1,7 +1,36 @@
 body {
-  background-image: url("../assets/horizontal-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-color: rgb(248, 248, 248);
+
+  &:before,
+  &:after {
+    content: '';
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: -2;
+  }
+
+  &:before {
+    background: url("../assets/upper.jpg");
+    background-size: 100%;
+    width: 90%;
+    background-repeat: no-repeat;
+
+    @media (min-width:961px) {
+      width: 59%;
+    }
+  }
+
+  &:after {
+    background: url("../assets/lower.jpg");
+    background-size: 100%;
+    width: 50%;
+    display: block;
+    background-repeat: round;
+    bottom: 0;
+    right: 0;
+
+    @media (min-width:961px) {
+      width: 30%;
+    }
+  }
 }

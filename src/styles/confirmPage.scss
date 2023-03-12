@@ -7,22 +7,36 @@
 }
 
 .inv-rows {
-  background: linear-gradient(90deg, #f0e1e000 0%, rgb(218 134 134 / 45%) 100%);
+  //background: linear-gradient(90deg, #f0e1e000 0%, rgb(218 134 134 / 45%) 100%);
+  background: linear-gradient(90deg, rgb(255 255 255 / 50%) 0%, rgb(218 134 134 / 20%) 100%);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  width: 50px;
   min-width: 50%;
   text-align: center;
   border-radius: 20px;
-  margin: 6% auto;
   min-height: 450px;
   font-style: italic;
+
+  margin: 8px;
+  padding: 8px;
+  width: auto;
+  font-size: 20px;
+  @media (min-width:961px) {
+    margin: 6% auto;
+    padding: 24px;
+    width: 50px;
+    font-size: inherit;
+    }
+
 }
 
 .inv-row {
-  padding-bottom: 25px;
   display: block;
+  padding-bottom: 18px;
+  @media (min-width:961px) {
+    padding-bottom: 25px;
+    }
 }
 
 .names {

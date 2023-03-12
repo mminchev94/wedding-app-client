@@ -6,20 +6,43 @@ nav {
 }
 
 .nav-links {
-  margin: 45px 10px 25px 0px;
+  margin: 16px 0 0;
   z-index: 200;
   border-bottom: 1px solid lightgray;
   padding-left: 0;
+
+  background: #ffffffd9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+
+
+  @media (min-width:961px) {
+    width: auto;
+    background: none;
+  }
 }
 
 nav > .nav-links > a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  margin: 10px;
+  margin: 10px 0;
   color: rgb(140, 108, 108);
   padding: 2px;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
+  flex-grow: 1;
+  border-right: 1px solid darkgray;
+  @media (min-width:961px) {
+    margin: 10px;
+    font-size: 1.4rem;
+    border-right: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
 }
 
 nav > .nav-links > a:hover {
