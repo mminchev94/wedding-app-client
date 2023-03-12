@@ -29,6 +29,7 @@
   margin: 8px;
   border: 1px solid lightgray;
   border-radius: 8px;
+  overflow: auto;
 
   @media (min-width: 961px) {
     text-align: start;

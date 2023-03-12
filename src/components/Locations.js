@@ -14,7 +14,7 @@ function Locations() {
         </a>
       </span>
       <span className="location-3">
-        Ресторант "Green Palace" -
+        Р-т "Green Palace" -
         <a rel="noreferrer" target="_blank" href="https://tinyurl.com/2cksnxy6">
           бул. "25 Септември" 1А
         </a>
