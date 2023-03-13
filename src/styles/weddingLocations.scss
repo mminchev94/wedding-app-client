@@ -4,7 +4,7 @@
   flex-direction: column;
   margin-bottom: 50px;
   margin-left: 5%;
-  background: rgba(255, 255, 255, 0.65);
+  background: #ffffffa6;
   padding: 8px;
   margin: 8px;
   border: 1px solid lightgray;
@@ -13,7 +13,6 @@
   .locations-header {
     font-size: 25px;
     letter-spacing: 2.5px;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 0 0 2.5%;
   }
 
@@ -28,7 +27,6 @@
 .wedding-locations {
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
   justify-content: space-evenly;
   flex-grow: 1;
 
@@ -56,6 +54,7 @@
   .location-link {
     display: inline-block;
     margin-left: 5px;
-    color: black;
+    color: #604a4a;
+    text-decoration: none;
   }
 }

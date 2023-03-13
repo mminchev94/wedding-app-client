@@ -1,12 +1,14 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import LoadingInvite from "./LoadingInvite";
 
 function ConfirmForm() {
   const navigate = useNavigate();
 
   const [pass, setPass] = useState("");
   const [formResult, setFormResult] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const onChangePassword = (e) => {
     setPass(e.target.value);
@@ -15,6 +17,7 @@ function ConfirmForm() {
   const onSubmitForm = async (e) => {
     e.preventDefault();
     if (pass) {
+      setIsLoading(true);
       try {
         const response = await axios.get(
           `https://nice-ruby-wildebeest-cape.cyclic.app/guests/${pass}`
@@ -24,13 +27,17 @@ function ConfirmForm() {
         navigate(`/invitation/${pass}`, { state: { guest } });
       } catch (error) {
         setFormResult(`Невалидна парола`);
+      } finally {
+        setIsLoading(false);
       }
     } else {
       setFormResult("Моля въведете парола в полето");
     }
   };
 
-  return (
+  return isLoading ? (
+    <LoadingInvite />
+  ) : (
     <form className="invite-form" onSubmit={onSubmitForm}>
       <input
         className="invite-input"
