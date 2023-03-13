@@ -9,8 +9,10 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
+    <div className="upper"></div>
     <BgVideo />
     <Navbar />
     <App />
+    <div className="lower"></div>
   </BrowserRouter>
 );
