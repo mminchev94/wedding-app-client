@@ -4,9 +4,9 @@ body {
 
 .upper {
   background: url("../assets/upper.jpg") top left / 100% no-repeat;
-  aspect-ratio: 1;
+  height: inherit;
   content: "";
-  // position: absolute;
+  position: absolute;
   z-index: -2;
   width: 70%;
 
@@ -20,8 +20,8 @@ body {
   bottom: 0;
   display: block;
   right: 0;
-  aspect-ratio: 1;
-  // position: absolute;
+  height: inherit;
+  position: absolute;
   z-index: -2;
   width: 40%;
 
