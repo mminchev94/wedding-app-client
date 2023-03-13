@@ -3,7 +3,7 @@ import video from "../assets/video.mp4";
 function BgVideo() {
   return (
     <div className="bgvideo">
-      <video src={video} autoPlay muted loop />
+      <video type="video/mp4" src={video} autoPlay muted loop playsInline />
     </div>
   );
 }
