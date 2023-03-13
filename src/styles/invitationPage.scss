@@ -33,6 +33,9 @@
     border-radius: 15px;
     height: 35px;
     padding-left: 10px;
+    &:focus {
+      outline: none;
+    }
   }
 
   .invite-button {

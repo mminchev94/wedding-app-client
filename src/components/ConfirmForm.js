@@ -43,7 +43,6 @@ function ConfirmForm() {
         className="invite-input"
         onChange={onChangePassword}
         value={pass}
-        autoFocus
         type="text"
         placeholder="Парола..."
       />
