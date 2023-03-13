@@ -6,7 +6,7 @@ function BgVideo() {
 
   useEffect(() => {
     const battery = navigator.webkitBattery || navigator.battery;
-    if (battery && battery.level < 0.2) {
+    if (battery && battery.level < 0.2 && battery.charging === false) {
       setShouldRenderVideo(false);
     }
   }, []);
