@@ -9,6 +9,7 @@ function BgVideo() {
         muted
         loop
         playsinline="true"
+        preload="metadata"
         disablePictureInPicture="true"
       />
     </div>
