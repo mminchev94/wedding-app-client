@@ -3,13 +3,11 @@ body {
 }
 
 .upper {
-  background: url("../assets/upper.jpg");
+  background: url("../assets/upper.jpg") top left / 100% no-repeat;
   aspect-ratio: 1;
   content: "";
   position: absolute;
   z-index: -2;
-  background-repeat: no-repeat;
-  background-size: 100%;
   width: 70%;
 
   @media (min-width: 961px) {
@@ -18,9 +16,7 @@ body {
 }
 
 .lower {
-  background: url("../assets/lower.jpg");
-  background-repeat: round;
-  background-size: 100%;
+  background: url("../assets/lower.jpg") bottom right / 100% no-repeat;
   bottom: 0;
   display: block;
   right: 0;
