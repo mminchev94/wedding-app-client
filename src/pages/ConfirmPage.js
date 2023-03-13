@@ -12,6 +12,7 @@ function ConfirmPage() {
   const [isLoading, setIsLoading] = useState(false);
 
   const onClickAttendance = async () => {
+    setIsLoading(true);
     try {
       await axios.put(
         `https://nice-ruby-wildebeest-cape.cyclic.app/guests/${guest.password}`,
@@ -20,11 +21,9 @@ function ConfirmPage() {
         }
       );
       setAttendanceConfirmed(true);
-      isLoading(true);
+      setIsLoading(false);
     } catch (e) {
       console.log(e);
-    } finally {
-      setIsLoading(false);
     }
   };
 

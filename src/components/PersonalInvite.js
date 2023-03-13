@@ -1,4 +1,4 @@
-import LoadingConfirm from "./LoadingConfirm";
+import LoadingConform from "./LoadingConform";
 
 function PersonInvite(props) {
   return (
@@ -28,7 +28,7 @@ function PersonInvite(props) {
       {props.attendanceConfirmed ? (
         <span>Благодарим, че ще присъствате на нашия празник!</span>
       ) : props.isLoading ? (
-        <LoadingConfirm />
+        <LoadingConform />
       ) : (
         <button onClick={props.onClickAttendance} className="button">
           Потвърждавам

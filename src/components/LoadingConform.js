@@ -1,4 +1,4 @@
-function LoadingConfirm() {
+function LoadingConform() {
   return (
     <div class="lds-ellipsis">
       <div></div>
@@ -9,4 +9,4 @@ function LoadingConfirm() {
   );
 }
 
-export default LoadingConfirm;
+export default LoadingConform;
