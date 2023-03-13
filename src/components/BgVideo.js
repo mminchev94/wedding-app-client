@@ -1,10 +1,24 @@
 import video from "../assets/video.mp4";
+import { useState, useEffect } from "react";
 
 function BgVideo() {
+  const [shouldRenderVideo, setShouldRenderVideo] = useState(true);
+
+  useEffect(() => {
+    const battery = navigator.webkitBattery || navigator.battery;
+    if (battery && battery.level < 0.2) {
+      setShouldRenderVideo(false);
+    }
+  }, []);
+
   return (
-    <div className="bgvideo">
-      <video type="video/mp4" src={video} autoPlay muted loop playsInline />
-    </div>
+    <>
+      {shouldRenderVideo && (
+        <div className="bgvideo">
+          <video src={video} autoPlay muted loop />
+        </div>
+      )}
+    </>
   );
 }
 
