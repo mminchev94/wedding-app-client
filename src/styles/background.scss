@@ -6,7 +6,7 @@ body {
   background: url("../assets/upper.jpg") top left / 100% no-repeat;
   aspect-ratio: 1;
   content: "";
-  position: absolute;
+  // position: absolute;
   z-index: -2;
   width: 70%;
 
@@ -21,7 +21,7 @@ body {
   display: block;
   right: 0;
   aspect-ratio: 1;
-  position: absolute;
+  // position: absolute;
   z-index: -2;
   width: 40%;
 
