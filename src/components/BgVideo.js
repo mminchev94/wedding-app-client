@@ -1,24 +1,42 @@
-import video from "../assets/video.mp4";
 import { useState, useEffect } from "react";
+import video from "../assets/video.mp4";
 
 function BgVideo() {
-  const [shouldRenderVideo, setShouldRenderVideo] = useState(true);
+  const [isLowPowerMode, setIsLowPowerMode] = useState(false);
 
   useEffect(() => {
-    const battery = navigator.webkitBattery || navigator.battery;
-    if (battery && battery.level < 0.2 && battery.charging === false) {
-      setShouldRenderVideo(false);
+    const handleBatteryChange = () => {
+      setIsLowPowerMode(
+        window.navigator &&
+          window.navigator.battery &&
+          window.navigator.battery.level < 0.2
+      );
+    };
+
+    if (window.navigator && window.navigator.getBattery) {
+      navigator.getBattery().then((battery) => {
+        setIsLowPowerMode(battery.level < 0.2);
+        battery.addEventListener("levelchange", handleBatteryChange);
+      });
     }
+
+    return () => {
+      if (window.navigator && window.navigator.getBattery) {
+        navigator.getBattery().then((battery) => {
+          battery.removeEventListener("levelchange", handleBatteryChange);
+        });
+      }
+    };
   }, []);
 
   return (
-    <>
-      {shouldRenderVideo && (
-        <div className="bgvideo">
-          <video src={video} autoPlay muted loop />
-        </div>
+    <div className="bgvideo">
+      {isLowPowerMode ? (
+        <div className="bgvideo-placeholder" />
+      ) : (
+        <video type="video/mp4" src={video} autoPlay muted loop playsInline />
       )}
-    </>
+    </div>
   );
 }
 
