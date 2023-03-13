@@ -31,16 +31,19 @@ function ConfirmForm() {
   };
 
   return (
-    <form onSubmit={onSubmitForm}>
+    <form className="invite-form" onSubmit={onSubmitForm}>
       <input
+        className="invite-input"
         onChange={onChangePassword}
         value={pass}
         autoFocus
         type="text"
         placeholder="Парола..."
       />
-      <button type="submit">Продължи</button>
-      <p>{formResult}</p>
+      <button className="invite-button" type="submit">
+        Продължи
+      </button>
+      <p className="form-result">{formResult}</p>
     </form>
   );
 }

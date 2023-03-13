@@ -11,7 +11,7 @@ function WeddingPlan({ weddingPlanData }) {
             <img className="icons" src={plan.icon} alt="icon" />
           )}
           <span className="time">{plan.time}</span>
-          <span>{plan.text}</span>
+          <span className="plan-text">{plan.text}</span>
         </div>
       ))}
     </div>

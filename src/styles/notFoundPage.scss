@@ -4,8 +4,13 @@
   align-items: center;
   height: 100%;
   flex-direction: column;
-}
+  img {
+    width: 60%;
+  }
 
-.notFound > img {
-  width: 25%;
+  @media (min-width: 961px) {
+    img {
+      width: 25%;
+    }
+  }
 }

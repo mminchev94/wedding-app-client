@@ -30,7 +30,7 @@ function PlanPage() {
     {
       icon: restaurant,
       time: "18:30",
-      text: "Поздравления, подаръци и настаняване в ресторант 'Green Palace'",
+      text: "Поздравления, подаръци и настаняване в р-т 'Green Palace'",
       class: "restaurant",
     },
     {
@@ -43,11 +43,11 @@ function PlanPage() {
   return (
     <div className="planpage-container">
       <div className="plan-container">
-        <span>Сватбен план</span>
+        <span className="plan-header">Сватбен план</span>
         <WeddingPlan weddingPlanData={weddingPlanData} />
       </div>
       <div className="locations-container">
-        <span>Локации (гр. Добрич)</span>
+        <span className="locations-header">Локации (гр. Добрич)</span>
         <Locations />
       </div>
     </div>

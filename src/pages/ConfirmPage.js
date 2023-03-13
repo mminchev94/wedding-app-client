@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import PersonInvite from "../components/PersonInvite";
+import PersonalInvite from "../components/PersonalInvite";
 
 function ConfirmPage() {
   const location = useLocation();
@@ -22,7 +22,7 @@ function ConfirmPage() {
 
   return (
     <div className="invitation-container">
-      <PersonInvite
+      <PersonalInvite
         guest={guest}
         attendanceConfirmed={attendanceConfirmed}
         onClickAttendance={onClickAttendance}

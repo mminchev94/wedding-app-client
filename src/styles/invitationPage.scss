@@ -6,51 +6,56 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  .invite-text {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    line-height: 40px;
+    @media (min-width: 961px) {
+      padding: 0 0 20px;
+      line-height: 45px;
+    }
+  }
+
+  .invite-form {
+    width: 90%;
+    z-index: 200;
+  }
+
+  .invite-input {
+    width: calc(100% - 135px);
+    margin-right: 20px;
+    border: none;
+    background-color: rgb(234, 223, 229);
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .invite-button {
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(170, 161, 166);
+    cursor: pointer;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+      background-color: rgb(136, 126, 131);
+      color: rgb(202, 202, 202);
+    }
+  }
+
+  .form-result {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   @media (min-width: 641px) {
     width: 40%;
   }
-}
-
-.invite-container > span {
-  font-size: 25px;
-  text-align: center;
-  letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
-  line-height: 40px;
-  @media (min-width: 961px) {
-    padding: 0 0 20px;
-    line-height: 45px;
-  }
-}
-
-.invite-container > form {
-  width: 90%;
-  z-index: 200;
-}
-
-form > input {
-  width: calc(100% - 135px);
-  margin-right: 20px;
-  border: none;
-  background-color: rgb(234, 223, 229);
-  border-radius: 15px;
-  height: 35px;
-  padding-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form > button {
-  height: 35px;
-  border: none;
-  border-radius: 15px;
-  background-color: rgb(170, 161, 166);
-  cursor: pointer;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form > button:hover {
-  background-color: rgb(136, 126, 131);
-  color: rgb(202, 202, 202);
 }
