@@ -8,6 +8,10 @@
   overflow: hidden;
   text-align: center;
   justify-content: center;
+
+  @media (max-width: 320px) {
+    padding-top: 20px;
+  }
   @media (min-width: 961px) {
     justify-content: space-around;
     text-align: start;
@@ -16,6 +20,7 @@
   .first-heading {
     font-size: 2rem;
     margin: 0;
+
     @media (min-width: 961px) {
       margin: 0 0 0 60%;
       font-size: 60px;
@@ -60,6 +65,11 @@
     border-radius: 50%;
     box-shadow: 10px 10px 10px 0px rgb(93 91 76);
     filter: opacity(0.4) drop-shadow(0 0 0 rgb(92, 92, 32));
+
+    @media (max-width: 320px) {
+      bottom: 5%;
+    }
+
     @media (min-width: 961px) {
       height: 250px;
     }
