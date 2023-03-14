@@ -34,6 +34,9 @@
       margin: 0 0 0 40%;
       font-size: 60px;
     }
+    @media (max-width: 320px) {
+      font-size: 2.4rem;
+    }
   }
 
   .location {

@@ -1,6 +1,9 @@
 .icons {
   width: 50px;
   filter: opacity(0.4) drop-shadow(0 0 0 rgb(40, 6, 27));
+  @media (max-width: 320px) {
+    width: 40px;
+  }
 }
 
 .planpage-container {
@@ -60,12 +63,18 @@
       .plan-text {
         padding-left: 0;
         font-size: 18px;
+        @media (max-width: 320px) {
+          font-size: 12px;
+        }
       }
 
       .time {
         font-size: 23px;
         font-weight: bold;
         margin-left: 5px;
+        @media (max-width: 320px) {
+          font-size: 15px;
+        }
       }
 
       .ritual {
