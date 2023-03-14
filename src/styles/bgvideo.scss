@@ -1,13 +1,15 @@
 .scrolling-image-container {
   overflow: hidden;
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.15;
   width: 100%;
+  height: 100vh;
+  z-index: -2;
 }
 
 .scrolling-image {
   background: url("../assets/video.png") repeat-x;
-  height: 750px;
+  height: 100%;
   width: 3480px;
   animation: slide 50s linear infinite;
 }
