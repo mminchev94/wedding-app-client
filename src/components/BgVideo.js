@@ -1,9 +1,5 @@
 function BgVideo() {
-  return (
-    <div class="scrolling-image-container">
-      <div class="scrolling-image"></div>
-    </div>
-  );
+  return <div class="bg-video"></div>;
 }
 
 export default BgVideo;
