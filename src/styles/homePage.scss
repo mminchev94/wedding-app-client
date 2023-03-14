@@ -17,6 +17,10 @@
     text-align: start;
   }
 
+  @media screen and (min-width: 380px) and (max-width: 920px) and (orientation: landscape) {
+    padding-top: 20px;
+  }
+
   .first-heading {
     font-size: 2rem;
     margin: 0;
@@ -24,6 +28,10 @@
     @media (min-width: 961px) {
       margin: 0 0 0 60%;
       font-size: 60px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
+      font-size: 1.5rem;
     }
   }
 
@@ -36,6 +44,16 @@
     }
     @media (max-width: 320px) {
       font-size: 2.4rem;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
+      font-size: 1.8rem;
+      margin: 0 0 20px 0;
+    }
+
+    @media screen and (min-width: 380px) and (max-width: 920px) and (orientation: landscape) {
+      font-size: 1.5rem;
+      margin: 0 0 35px 0;
     }
   }
 
@@ -74,7 +92,16 @@
     }
 
     @media (min-width: 961px) {
-      height: 250px;
+      height: 220px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
+      height: 80px;
+      bottom: 6%;
+    }
+
+    @media screen and (min-width: 380px) and (max-width: 920px) and (orientation: landscape) {
+      bottom: 4%;
     }
   }
 }
