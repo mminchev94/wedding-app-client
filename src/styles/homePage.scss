@@ -10,7 +10,7 @@
   justify-content: center;
 
   @media (max-width: 320px) {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   @media (min-width: 961px) {
     justify-content: space-around;
@@ -44,7 +44,7 @@
     }
     @media (max-width: 320px) {
       font-size: 2.3rem;
-      margin: 10px 0 20px 0;
+      margin: 10px 0 2px 0;
     }
 
     @media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
@@ -89,7 +89,7 @@
     filter: opacity(0.4) drop-shadow(0 0 0 rgb(92, 92, 32));
 
     @media (max-width: 320px) {
-      bottom: 2%;
+      bottom: 1%;
     }
 
     @media (min-width: 961px) {
