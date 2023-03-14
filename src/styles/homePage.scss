@@ -43,7 +43,8 @@
       font-size: 60px;
     }
     @media (max-width: 320px) {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
+      margin: 10px 0 20px 0;
     }
 
     @media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
@@ -88,7 +89,7 @@
     filter: opacity(0.4) drop-shadow(0 0 0 rgb(92, 92, 32));
 
     @media (max-width: 320px) {
-      bottom: 5%;
+      bottom: 2%;
     }
 
     @media (min-width: 961px) {
