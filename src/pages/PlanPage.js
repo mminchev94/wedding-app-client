@@ -30,7 +30,7 @@ function PlanPage() {
     {
       icon: restaurant,
       time: "18:30",
-      text: "Поздравления, подаръци и настаняване в р-т 'Green Palace'",
+      text: "Поздравления, подаръци и настаняване в р-т 'Ривера'",
       class: "restaurant",
     },
     {

@@ -24,14 +24,14 @@ function Locations() {
         </a>
       </span>
       <span className="location-3">
-        Р-т "Green Palace" -
+        р-т "Ривера" -
         <a
           className="location-link"
           rel="noreferrer"
           target="_blank"
-          href="https://tinyurl.com/2cksnxy6"
+          href="https://tinyurl.com/4828bh5h"
         >
-          бул. "25 Септември" 1А
+          жк. Дружба 1 - срещу КАТ, до Лукойл
         </a>
       </span>
     </div>
