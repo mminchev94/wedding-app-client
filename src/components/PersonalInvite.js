@@ -22,17 +22,20 @@ function PersonInvite(props) {
       <span className="inv-row">
         Кумуват: <strong>Атанас и Анелия</strong>
       </span>
-      <span className="inv-row">
-        Моля, потвърдете Вашето присъствие до 31.07.2023г.
-      </span>
       {props.attendanceConfirmed ? (
         <span>Благодарим, че ще присъствате на нашия празник!</span>
       ) : props.isLoading ? (
         <LoadingConform />
       ) : (
+        <div>
+        
+      <span className="inv-row">
+      Моля, потвърдете Вашето присъствие до 31.07.2023г.
+    </span>
         <button onClick={props.onClickAttendance} className="button">
           Потвърждавам
         </button>
+        </div>
       )}
     </div>
   );
